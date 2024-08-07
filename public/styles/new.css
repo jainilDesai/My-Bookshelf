@@ -1,0 +1,35 @@
+main{
+  height: 100%;
+}
+
+h2{
+  margin-bottom: 5%;
+}
+
+form{
+  height: 100%;
+}
+
+
+#form-content{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#form-content > :nth-child(2){
+  display: grid;
+  justify-items: center;
+}
+
+#form-content > :nth-child(3){
+  display: grid;
+  justify-items: center;
+}
+
+#rating {
+  background-color: #17384d;
+  color: #ffffff;
+}
+

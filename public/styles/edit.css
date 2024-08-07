@@ -1,0 +1,29 @@
+main {
+  height: 100%;
+}
+
+h2 {
+  margin-bottom: 5%;
+}
+
+form {
+  height: 100%;
+}
+
+button{
+    margin-top: 10%;
+}
+
+
+#form-content {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#form-content > :nth-child(1) {
+  display: grid;
+  justify-items: center;
+}

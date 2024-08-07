@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Book Review</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/edit.css" />
+    <link rel="preload" as="image" href="images/brown-wooden-textured-flooring-background.jpg">
+  </head>
+  <body>
+    <main>
+        <form action="/edited" method="post">
+          <div id="form-content">
+            <div>
+               <h2>Your review</h2>
+            <textarea id="review" name="review" rows="8" cols="50" required>
+            <%= bookReview %>
+            </textarea>
+            </div>
+          <button type="submit" name="book" value="<%= bookId %>" id="<%= bookId %>">
+            Update
+          </button>
+        </div>
+        </form>
+
+      <% if (locals.error) { %>
+      <div id="tag-error" class="tag-error">
+        <!-- Show any errors that were sent from the backend -->
+        <%= error %>
+      </div>
+      <% } %> <%- include("partials/footer.ejs") %>

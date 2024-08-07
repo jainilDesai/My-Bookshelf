@@ -1,0 +1,83 @@
+html {
+  font-size: 6.25%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+  height: 100dvh;
+  max-width: 40em;
+  margin: 0 auto;
+  font-size: 20rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  background-image: url("images/brown-wooden-textured-flooring-background.jpg");
+  background-size: cover;
+  background-repeat:repeat-y;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+button {
+  background-color: #17384d;
+  color: #ffffff;
+}
+
+#dropdown {
+  background-color: #17384d;
+  color: #ffffff;
+}
+
+#header-func {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#book-func {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#books {
+  margin-top: 5em;
+}
+
+#abook {
+  margin-bottom: 6em;
+}
+
+#abook img {
+  width: 15%;
+  height: 15%;
+  float: left;
+  margin-right: 2em;
+}
+
+#bookcover {
+  margin: 0;
+}

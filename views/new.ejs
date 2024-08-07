@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Book</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/new.css" />
+    <link rel="preload" as="image" href="images/brown-wooden-textured-flooring-background.jpg">
+  </head>
+  <body>
+    <main>
+      <form action="/new" method="post">
+        <div id="form-content">
+          <div>
+            <h2>Add a Book ISBN</h2>
+            <textarea id="ISBN" name="ISBN" rows="1" cols="35" required ></textarea>
+          </div>
+          <div>
+            <h2>Your review</h2>
+            <textarea
+              id="review"
+              name="review"
+              rows="5"
+              cols="35"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <h2>Rating</h2>
+            <select id="rating" name="rating" required>
+              <option value="" disabled selected>Rating:</option>
+              <% for (let i = 0; i <= 10; i++) { %>
+              <option value="<%= i %>"><%= i %></option>
+              <% } %>
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+        
+      </form>
+
+      <% if (locals.error) { %>
+      <div id="tag-error" class="tag-error">
+        <!-- Show any errors that were sent from the backend -->
+        <%= error %>
+      </div>
+      <% } %> <%- include("partials/footer.ejs") %>
